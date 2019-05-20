@@ -5,6 +5,6 @@
     echo $curso;
     
 ?>
-    <h1>oi</h1>
+    <h1>oi gatinhooooooooooooooooooooooooooooooooooooooooooooooooo</h1>
 
 <?php include("views/rodape.php"); ?>
