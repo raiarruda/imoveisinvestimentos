@@ -19,7 +19,9 @@ if(array_key_exists("removido", $_GET) && $_GET ['removido']=='true') {
         <tr>
             <td> <?=$sala['titulo'] ?></td>
             <td> <?=$sala['area'] ?></td>
-            <td><form action= "remove-sala.php?id=<?=$sala['id'] ?>" method="POST">
+            <td><form action= "remove-sala.php?id=<?=$sala['id'] ?>" method="POST"> 
+            <!-- to passando como get e tá funcionando
+        eu deveria está passando como post -->
              <button>Remover </button>    
             </form></td>
         </tr>
