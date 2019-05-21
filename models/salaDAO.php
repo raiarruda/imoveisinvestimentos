@@ -13,11 +13,15 @@
 
 
 
-
-    function insereSala($conexao, $area, $mezzanino, $shopping, $centrocomercial, $pavimentacao){
-        $query = "INSERT INTO sala (area, mezzanino, shopping, centrocomercial, pavimentacao) VALUES ('{$area}', '{$mezzanino}', '{$shopping}', '{$centrocomercial}', '{$pavimentacao}')";
+    function insereSala($conexao, $titulo, $area, $mezzanino, $shopping, $centrocomercial, $pavimentacao){
+        $query = "INSERT INTO sala (titulo, area, mezzanino, shopping, centrocomercial, pavimentacao) VALUES ('{$titulo}','{$area}', '{$mezzanino}', '{$shopping}', '{$centrocomercial}', '{$pavimentacao}')";
         return mysqli_query($conexao,  $query);
     }
 
+
+    function removeSala($conexao, $id) {
+        $query = "delete from sala where id = {$id}";
+        return mysqli_query($conexao, $query);
+    }
 
 

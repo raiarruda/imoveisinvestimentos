@@ -4,18 +4,20 @@
 <?php
 
 
-    $area = $_GET['area'];
+    $titulo = $_POST['titulo'];
 
-    $mezzanino = $_GET['mezzanino'];
+    $area = $_POST['area'];
 
-    $shopping = $_GET['shopping'];
+    $mezzanino = $_POST['mezzanino'];
 
-    $pavimentacao = $_GET['pavimentacao'];
+    $shopping = $_POST['shopping'];
 
-    $centrocomercial = $_GET['centrocomercial'];
+    $pavimentacao = $_POST['pavimentacao'];
+
+    $centrocomercial = $_POST['centrocomercial'];
 
 
-if(insereSala($conexao, $area, $mezzanino, $shopping, $centrocomercial, $pavimentacao)){ ?>
+if(insereSala($conexao, $titulo, $area, $mezzanino, $shopping, $centrocomercial, $pavimentacao)){ ?>
     <p> A sala foi adicionada</p>
 <?php
 }else{

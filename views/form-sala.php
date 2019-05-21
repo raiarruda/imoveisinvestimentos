@@ -2,8 +2,12 @@
 <?php include("../models/salaDAO.php"); ?>
 
 <h1>Formulário de cadastro</h1>
-<form action="adiciona-sala.php">
+<form action="adiciona-sala.php" method="POST">
     <table>
+        <tr>
+            <td>Titulo</td>
+            <td><input class="form-control" type="text" name="titulo" /></td>
+        </tr>
         <tr>
             <td>Area</td>
             <td><input class="form-control" type="number" name="area" /></td>
