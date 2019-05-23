@@ -1,5 +1,5 @@
 <?php include("cabecalho.php"); ?>
-<?php include("../models/salaDAO.php"); ?>
+<?php include("../models/lojaDAO.php"); ?>
 
 <?php
 
@@ -17,8 +17,8 @@
     $centrocomercial = $_POST['centrocomercial'];
 
 
-if(insereSala($conexao, $titulo, $area, $mezzanino, $shopping, $centrocomercial, $pavimentacao)){ ?>
-    <p> A sala foi adicionada</p>
+if(insereLoja($conexao, $titulo, $area, $mezzanino, $shopping, $centrocomercial, $pavimentacao)){ ?>
+    <p> A Loja foi adicionada</p>
 <?php
 }else{
     $msg = msqli_error($conexao);

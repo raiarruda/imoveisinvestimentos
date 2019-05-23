@@ -1,8 +1,8 @@
 <?php include("cabecalho.php"); ?>
-<?php include("../models/salaDAO.php"); ?>
+<?php include("../models/lojaDAO.php"); ?>
 
 <h1>Formulário de cadastro</h1>
-<form action="adiciona-sala.php" method="POST">
+<form action="adiciona-loja.php" method="POST">
     <table>
         <tr>
             <td>Titulo</td>
