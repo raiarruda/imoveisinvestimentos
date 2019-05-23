@@ -11,10 +11,10 @@
         return $lojas;
     }
 
-
-
     function insereLoja($conexao, $titulo, $area, $mezzanino, $shopping, $centrocomercial, $pavimentacao){
-        $query = "INSERT INTO loja (titulo, area, mezzanino, shopping, centrocomercial, pavimentacao) VALUES ('{$titulo}','{$area}', '{$mezzanino}', '{$shopping}', '{$centrocomercial}', '{$pavimentacao}')";
+        $imovel_id = insereImovel($conexao,$titulo);
+
+        $query = "INSERT INTO loja (imovel_id, area, mezzanino, shopping, centrocomercial, pavimentacao) VALUES ('{$imovel_id}',{$area}', '{$mezzanino}', '{$shopping}', '{$centrocomercial}', '{$pavimentacao}')";
         return mysqli_query($conexao,  $query);
     }
 
@@ -24,4 +24,16 @@
         return mysqli_query($conexao, $query);
     }
 
+    function insereImovel($conexao, $titulo){
+        $query = "INSERT INTO `imovel` (`titulo`) VALUES ('{$titulo}')";
+        if( mysqli_query($conexao, $query)){
+            $imovel_id = mysqli_insert_id($conexao);
+            return $imovel_id;
+        }
+        else{
+            return false;
+        }
+            
+
+    }
     // function busca

@@ -17,14 +17,11 @@
     $centrocomercial = $_POST['centrocomercial'];
 
 
-if(insereLoja($conexao, $titulo, $area, $mezzanino, $shopping, $centrocomercial, $pavimentacao)){ ?>
+if(insereLoja($conexao, $titulo, $area, $mezzanino,  $shopping, $pavimentacao, $centrocomercial)){ ?>
     <p> A Loja foi adicionada</p>
 <?php
 }else{
-    $msg = msqli_error($conexao);
-    ?>
-    <p> Teve erro   <?= $msg ?>  </p>
-<?php
+    echo ("deu ruim");
 
 }
 ?>
