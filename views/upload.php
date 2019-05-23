@@ -18,7 +18,10 @@ if(isset($_POST['submit'])){
         $error      = $_FILES['images']['error'][$key];
         
         // File upload path
-        $fileName = basename($_FILES['images']['name'][$key]);
+        $final = explode( ".", $_FILES['images'] ["name"][$key] );
+        $extensao = strtolower( end( $final ) ); // o end só recebe variavel como paramentro, por isso, a quebra
+        $fileName  = md5(time()). "." . $extensao;
+        // $fileName = basename($_FILES['images']['name'][$key]);
         $targetFilePath = $targetDir . $fileName;
         
         // Check whether file type is valid
@@ -26,7 +29,17 @@ if(isset($_POST['submit'])){
         if(in_array($fileType, $allowTypes)){    
             // Store images on the server
             if(move_uploaded_file($_FILES['images']['tmp_name'][$key],$targetFilePath)){
-                $images_arr[] = $targetFilePath;
+            
+              $sql_code = "INSERT INTO img_imovel (id, nome_arquivo, data) VALUES(null, '$targetFilePath', NOW())";
+            
+              if(mysqli_query($conexao, $sql_code))
+                $msg = "Arquivo enviado com sucesso! <br>";
+              else
+                $msg = "Falha ao enviar arquivo.";
+
+              echo $msg;
+            
+            $images_arr[] = $targetFilePath;
             }
         }
     }
