@@ -4,7 +4,7 @@
 <h1>Formulário de cadastro</h1>
 <form action="adiciona-loja.php" method="POST">
     <table>
-        <tr>
+        <tr>  
             <td>Titulo</td>
             <td><input class="form-control" type="text" name="titulo" /></td>
         </tr>
@@ -14,7 +14,7 @@
         </tr>
         <tr>
             <td>Mezzanino</td>
-            <td><input class="form-control" type="number" name="mezzanino" /></td>
+            <td><input class="form-control" type="number" name="tem_mezzanino" /></td>
         </tr>
         <tr>
             <td>Shopping</td>
@@ -22,11 +22,15 @@
         </tr>
         <tr>
             <td>Centro Comercial</td>
-            <td><input class="form-control" type="number" name="centrocomercial" /></td>
+            <td><input class="form-control" type="number" name="centro_comercial" /></td>
         </tr>
         <tr>
             <td>Pavimentacao</td>
-            <td><input class="form-control" type="number" name="pavimentacao" /></td>
+            <td><input class="form-control" type="number" name="tipo_de_rua" /></td>
+        </tr>
+        <tr>
+            <td>Frente de rua</td>
+            <td><input class="form-control" type="number" name="frente_rua" /></td>
         </tr>
         <tr>
             <td><button class="btn btn-primary" type="submit">Cadastrar</button></td>

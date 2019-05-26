@@ -11,18 +11,15 @@
         return $lojas;
     }
 
-    function insereLoja($conexao, $titulo, $area, $mezzanino, $shopping, $centrocomercial, $pavimentacao){
-        $imovel_id = insereImovel($conexao,$titulo);
+    function insereLoja($conexao, $titulo, $area, $tem_mezzanino,  $shopping, $tipo_de_rua, $centro_comercial, $frente_rua){
 
-        $query = "INSERT INTO loja (imovel_id, area, mezzanino, shopping, centrocomercial, pavimentacao) VALUES ('{$imovel_id}',{$area}', '{$mezzanino}', '{$shopping}', '{$centrocomercial}', '{$pavimentacao}')";
+        $imovel_id = insereImovel($conexao,$titulo);
+        $query = "INSERT INTO loja (imovel_id, area,tem_mezzanino, shopping, centro_comercial, tipo_de_rua, frente_rua) 
+            VALUES ('{$imovel_id}','{$area}', '{$tem_mezzanino}', '{$shopping}', '{$centro_comercial}', '{$tipo_de_rua}', '{$frente_rua}')";
+    
         return mysqli_query($conexao,  $query);
     }
 
-
-    function removeLoja($conexao, $id) {
-        $query = "delete from loja where id = {$id}";
-        return mysqli_query($conexao, $query);
-    }
 
     function insereImovel($conexao, $titulo){
         $query = "INSERT INTO `imovel` (`titulo`) VALUES ('{$titulo}')";
@@ -35,5 +32,10 @@
         }
             
 
+    }
+    
+    function removeLoja($conexao, $id) {
+        $query = "delete from loja where id = {$id}";
+        return mysqli_query($conexao, $query);
     }
     // function busca
