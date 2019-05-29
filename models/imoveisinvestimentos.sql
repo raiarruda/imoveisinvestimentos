@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: 28-Maio-2019 às 17:57
+-- Generation Time: 29-Maio-2019 às 13:44
 -- Versão do servidor: 5.7.26
 -- versão do PHP: 7.2.18
 
@@ -21,6 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `imoveisinvestimentos`
 --
+CREATE DATABASE IF NOT EXISTS `imoveisinvestimentos` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `imoveisinvestimentos`;
 
 -- --------------------------------------------------------
 
