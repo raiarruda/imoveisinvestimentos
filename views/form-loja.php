@@ -1,5 +1,5 @@
 <?php require_once("cabecalho.php"); ?>
-<?php increquire_oncelude("../models/lojaDAO.php"); ?>
+<?php require_once("../models/lojaDAO.php"); ?>
 
 <h1>Formulário de cadastro</h1>
 <form action="adiciona-loja.php" method="POST">
@@ -11,7 +11,7 @@
         <tr>
             <!-- TODO:  numeros reais -->
             <td>Area</td>
-            <td><input class="form-control" type="number" name="area" /></td>
+            <td><input class="form-control" type="number" step="any" min="0" name="area" /></td>
         </tr>
         <!-- TODO: check box  -->
         <tr>

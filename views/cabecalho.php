@@ -28,12 +28,12 @@
                             <a class="nav-link" href="#">Preços</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="views/lista-loja.php" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             LOJA
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="views/lista-loja.php">Lista da Loja</a>
-                            <a class="dropdown-item" href="views/form-loja.php">ADD Loja</a>
+                            <div class="dropdown-menu" aria-labelledby="#">
+                            <a class="dropdown-item" href="#">Lista da Loja</a>
+                            <a class="dropdown-item" href="#">ADD Loja</a>
                             </div>
                         </li>
                     </ul>
