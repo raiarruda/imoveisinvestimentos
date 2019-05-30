@@ -1,5 +1,5 @@
-<?php include("cabecalho.php"); ?>
-<?php include("../models/lojaDAO.php"); ?>
+<?php require_once("cabecalho.php"); ?>
+<?php require_once("../models/lojaDAO.php"); ?>
 
 <?php
 

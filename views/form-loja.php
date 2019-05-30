@@ -1,5 +1,5 @@
-<?php include("cabecalho.php"); ?>
-<?php include("../models/lojaDAO.php"); ?>
+<?php require_once("cabecalho.php"); ?>
+<?php increquire_oncelude("../models/lojaDAO.php"); ?>
 
 <h1>Formulário de cadastro</h1>
 <form action="adiciona-loja.php" method="POST">
