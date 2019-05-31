@@ -28,14 +28,11 @@
     $loja->centro_comercial = $centro_comercial;
     $loja->frente_rua = $frente_rua;
 
-    // usa o metodo inserir para o objeto loja
+    // usa o metodo inserir para o objeto loja no banco de dados e retorna o ID
      $loja->inserir();
 
-
+    // Redirecionar para pagina
     // header('Location: lista-loja.php');
-
-    
-
 
 
  include("rodape.php"); ?>
