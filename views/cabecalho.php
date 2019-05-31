@@ -2,7 +2,7 @@
 <head>
     <title>Imoveis Investimentos</title>
     <meta charset="utf-8">
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="/imoveisinvestimentos/views/assets/css/bootstrap.css" rel="stylesheet" />
     
     <!-- <link href="assets/css/site.css" rel="stylesheet" /> -->
 </head>
