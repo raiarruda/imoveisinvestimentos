@@ -31,6 +31,8 @@ class Loja{
                      '{$this->frente_rua}','{$this->descricao}', '{$this->localizacao}')";                     
         $conexao = Conexao::pegarConexao();
         $conexao->exec($query);
+
+        return ($conexao->lastInsertId()) ;
         // if( mysqli_query($conexao, $query)){
         //     $imovel_id = mysqli_insert_id($conexao);
         //     return $imovel_id;

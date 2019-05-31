@@ -1,5 +1,5 @@
 <?php require_once("cabecalho.php"); ?>
-<?php require_once("../models/lojaDAO.php"); ?>
+<?php require_once("../models/Loja.php"); ?>
 
 
 <h1>Formulário de cadastro</h1>
