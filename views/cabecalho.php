@@ -25,19 +25,26 @@
                                 <a class="nav-link" href="/imoveisinvestimentos/index.php">Home</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Quem Somos <span class="sr-only">(Página atual)</span></a>
+                                <a class="nav-link" href="#">Conceito<span class="sr-only">(Página atual)</span></a>
                             </li>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Preços</a>
+                                <a class="nav-link" href="#">Histórico</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                LOJA
-                                </a>
+                                Imóveis</a>
                                 <div class="dropdown-menu" aria-labelledby="#">
-                                <a class="dropdown-item" href="#">Lista da Loja</a>
-                                <a class="dropdown-item" href="#">ADD Loja</a>
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Venda</a>
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Aluguel</a>
+                                
+                                <div class="dropdown-menu" aria-labelledby="#">
+                                <a class="dropdown-item" href="#">Apartamento</a>
+                                <a class="dropdown-item" href="#">Casa</a>
+                                <a class="dropdown-item" href="#">Loja</a>
+                                <a class="dropdown-item" href="#">Terreno</a>
                                 </div>
                             </li>
                         </ul>
