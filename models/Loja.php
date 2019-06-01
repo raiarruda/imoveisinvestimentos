@@ -49,11 +49,23 @@ class Loja{
     }
     
     public function editar(){
-        pass;
+    $query= "UPDATE loja SET titulo ={$this->titulo}, area={$this->area}, tem_mezzanino={$this->tem_mezzanino}, shopping={$this->shopping},
+            centro_comercial={$this->centro_comercial}, frete_rua= {$this->frente_rua}, descricao={$this->descricao}, localizacao={$this->localizacao} 
+    WHERE id={$this->id}";
+    $conexao = Conexao::pegarConexao();
+    $conexao = exec ($query);
+
     }
     
     public function carregar(){
-        pass;
+    $query = "SELECT * FROM loja WHERE id={$this->id}";
+    $conexao = Conexao::pegarConexao();
+    $resultado = $conexao->query($query);
+    $lista =  $resultado->fetchAll();
+    foreach ($lista as $linha) {
+        return $linha;
+    }    
+    
     }
 
 }

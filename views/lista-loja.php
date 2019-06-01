@@ -19,7 +19,11 @@ if(array_key_exists("removido", $_GET) && $_GET ['removido']=='true') {
     foreach ($lojas as $loja):
         ?>
         <tr>
-            <td> <?=$loja['titulo'] ?></td>
+            <td><a href="detalhe-loja.php?<?=$loja['id']?>">
+                <?=$loja['titulo'] ?>
+                <?=$loja['id'] ?>
+
+                </a></td>
             <td> <?=$loja['area'] ?></td>
             <td><form action= "remove-loja.php?id=<?=$loja['id'] ?>" method="POST"> 
             <!-- to passando como get e tá funcionando
