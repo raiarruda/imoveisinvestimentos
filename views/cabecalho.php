@@ -18,11 +18,10 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                    <!-- TODO opções corretas menu -->
                     <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="/imoveisinvestimentos/index.php">Home</span></a>
+                                <a class="nav-link" href="/imoveisinvestimentos/index.php">Página Inicial</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Conceito<span class="sr-only">(Página atual)</span></a>
@@ -31,21 +30,13 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Histórico</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Imóveis</a>
-                                <div class="dropdown-menu" aria-labelledby="#">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Venda</a>
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Aluguel</a>
-                                
-                                <div class="dropdown-menu" aria-labelledby="#">
-                                <a class="dropdown-item" href="#">Apartamento</a>
-                                <a class="dropdown-item" href="#">Casa</a>
-                                <a class="dropdown-item" href="#">Loja</a>
-                                <a class="dropdown-item" href="#">Terreno</a>
-                                </div>
+                            <!-- TODO Criar uma separação do dropdown de "venda" e "aluguel" do menu "imoveis" -->
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contato</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
                             </li>
                         </ul>
                     </div>
