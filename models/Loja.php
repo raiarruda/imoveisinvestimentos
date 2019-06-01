@@ -13,6 +13,15 @@ class Loja{
     public $descricao;
     public $localizacao;
     
+    public function __construct($id = false)
+    {
+        if ($id) {
+            $this->id = $id;
+            // var_dump($this);
+            $this->carregar();
+            // var_dump($this);
+        }
+    }
 
     public function listar(){
         
@@ -31,41 +40,38 @@ class Loja{
                      '{$this->frente_rua}','{$this->descricao}', '{$this->localizacao}')";                     
         $conexao = Conexao::pegarConexao();
         $conexao->exec($query);
-
         return ($conexao->lastInsertId()) ;
-        // if( mysqli_query($conexao, $query)){
-        //     $imovel_id = mysqli_insert_id($conexao);
-        //     return $imovel_id;
-        // }
-        // else{
-        //     return false;
-        // }
     }
 
     public function deletar(){
-        $query = "DELETE FROM loja WHERE id={$this->id}";
+        $query = "DELETE FROM loja WHERE id='{$this->id}'";
         $conexao = Conexao::pegarConexao();
         $conexao->exec($query);
     }
     
     public function editar(){
-    $query= "UPDATE loja SET titulo ={$this->titulo}, area={$this->area}, tem_mezzanino={$this->tem_mezzanino}, shopping={$this->shopping},
-            centro_comercial={$this->centro_comercial}, frete_rua= {$this->frente_rua}, descricao={$this->descricao}, localizacao={$this->localizacao} 
-    WHERE id={$this->id}";
-    $conexao = Conexao::pegarConexao();
-    $conexao = exec ($query);
-
+        $query= "UPDATE loja SET titulo ='{$this->titulo}', area='{$this->area}', tem_mezzanino='{$this->tem_mezzanino}', shopping='{$this->shopping}',
+                centro_comercial='{$this->centro_comercial}', frete_rua= '{$this->frente_rua}', descricao='{$this->descricao}', localizacao='{$this->localizacao}'
+        WHERE id='{$this->id}'";
+        $conexao = Conexao::pegarConexao();
+        $conexao = exec ($query);
     }
     
     public function carregar(){
-    $query = "SELECT * FROM loja WHERE id={$this->id}";
-    $conexao = Conexao::pegarConexao();
-    $resultado = $conexao->query($query);
-    $lista =  $resultado->fetchAll();
-    foreach ($lista as $linha) {
-        return $linha;
-    }    
-    
+        // $conexao = Conexao::pegarConexao();
+        // $resultado = $conexao->query($query);
+        // $lista =  $resultado->fetchAll();
+        // var_dump($query);
+        // foreach ($lista as $linha) {
+        //     var_dump($linha);
+        //     return $linha;
+        // }    
+        $sql = "SELECT * FROM loja WHERE id='{$this->id}'";
+        $conexao = Conexao::pegarConexao();
+        $result = $conexao->query( $sql );
+        $rows = $result->fetch(PDO::FETCH_ASSOC);
+        
+        return $rows;
     }
 
 }

@@ -32,7 +32,7 @@
      $loja->inserir();
 
     // Redirecionar para pagina
-    // header('Location: lista-loja.php');
+    header('Location: lista-loja.php');
 
 
  include("rodape.php"); ?>

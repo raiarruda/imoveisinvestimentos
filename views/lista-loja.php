@@ -19,7 +19,7 @@ if(array_key_exists("removido", $_GET) && $_GET ['removido']=='true') {
     foreach ($lojas as $loja):
         ?>
         <tr>
-            <td><a href="detalhe-loja.php?<?=$loja['id']?>">
+            <td><a href="detalhe-loja.php?id=<?=$loja['id']?>">
                 <?=$loja['titulo'] ?>
                 <?=$loja['id'] ?>
 
