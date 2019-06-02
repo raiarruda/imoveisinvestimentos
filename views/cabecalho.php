@@ -14,7 +14,7 @@
     <div class="container-fluid"> 
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a href="/imoveisinvestimentos/index.php"><img src="https://place-hold.it/100"></a>
+                <a href="index.php"><img src="https://place-hold.it/100"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -31,7 +31,8 @@
                                 <a class="nav-link" href="#">Histórico</a>
                             </li>
                             <!-- TODO Criar uma separação do dropdown de "venda" e "aluguel" do menu "imoveis" -->
-                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Imóveis</a>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Contato</a>
                             </li>
