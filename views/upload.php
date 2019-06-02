@@ -1,6 +1,6 @@
 <?php
   
-  include("../models/conecta.php");
+  include("../models/Conexao.php");
 
 
 
@@ -20,7 +20,6 @@
           $error      = $_FILES['images']['error'][$key];
            
         
-          
           // File upload path
           $final = explode( ".", $_FILES['images'] ["name"][$key] );
           $extensao = strtolower( end( $final ) ); // o end só recebe variavel como paramentro, por isso, a quebra
@@ -32,15 +31,16 @@
           $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
 
           if(in_array($fileType, $allowTypes)){    
-              $sql_code = "INSERT INTO img_imovel (imovel_id, nome_arquivo, data) VALUES( '$loja_id', '$targetFilePath', NOW())";
-              
-              if(move_uploaded_file($_FILES['images']['tmp_name'][$key],$targetFilePath)  &&  mysqli_query($conexao, $sql_code) ) // garante que o upload seja feito apenas quando salvar no banco
+            $conexao = Conexao::pegarConexao();
+            $query = "INSERT INTO img_imovel (imovel_id, nome_arquivo, data) VALUES( '$loja_id', '$targetFilePath', NOW())";
+            $enviou =$conexao->exec ($query);
+              if(move_uploaded_file($_FILES['images']['tmp_name'][$key],$targetFilePath)  &&  $enviou) // garante que o upload seja feito apenas quando salvar no banco
                 $msg = "Arquivo enviado com sucesso! <br>";
               else
                   $msg = "Falha ao enviar arquivo.";
 
               echo $msg;
-              
+    
               $images_arr[] = $targetFilePath;
               }
           }

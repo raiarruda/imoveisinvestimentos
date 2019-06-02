@@ -29,10 +29,11 @@
     $loja->frente_rua = $frente_rua;
 
     // usa o metodo inserir para o objeto loja no banco de dados e retorna o ID
-     $loja->inserir();
+     $id = $loja->inserir();
 
     // Redirecionar para pagina
-    header('Location: lista-loja.php');
+    // header('Location: lista-loja.php');
+    header("Location: form-imagem.php?id=".$id);
 
 
  include("rodape.php"); ?>

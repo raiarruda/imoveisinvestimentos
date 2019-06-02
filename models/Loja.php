@@ -12,6 +12,8 @@ class Loja{
     public $area;
     public $descricao;
     public $localizacao;
+    public $fotos;
+
     
     public function __construct($id = false)
     {
@@ -54,22 +56,25 @@ class Loja{
                 centro_comercial='{$this->centro_comercial}', frete_rua= '{$this->frente_rua}', descricao='{$this->descricao}', localizacao='{$this->localizacao}'
         WHERE id='{$this->id}'";
         $conexao = Conexao::pegarConexao();
-        $conexao = exec ($query);
+        $conexao-> exec ($query);
     }
     
     public function carregar(){
-        // $conexao = Conexao::pegarConexao();
-        // $resultado = $conexao->query($query);
-        // $lista =  $resultado->fetchAll();
-        // var_dump($query);
-        // foreach ($lista as $linha) {
-        //     var_dump($linha);
-        //     return $linha;
-        // }    
-        $sql = "SELECT * FROM loja WHERE id='{$this->id}'";
+        
+        $query = "SELECT * FROM loja WHERE id='{$this->id}'";
         $conexao = Conexao::pegarConexao();
-        $result = $conexao->query( $sql );
+        $result = $conexao->query( $query );
         $rows = $result->fetch(PDO::FETCH_ASSOC);
+        
+        return $rows;
+    }
+    public function fotos(){
+        
+        $query = "SELECT * FROM img_imovel WHERE imovel_id='{$this->id}'";
+        $conexao = Conexao::pegarConexao();
+        $result = $conexao->query( $query );
+        $this->fotos = $result->fetchAll(PDO::FETCH_ASSOC);
+        $rows= $this->fotos;
         
         return $rows;
     }
