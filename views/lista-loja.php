@@ -25,6 +25,7 @@ if(array_key_exists("removido", $_GET) && $_GET ['removido']=='true') {
 
                 </a></td>
             <td> <?=$loja['area'] ?></td>
+            <td><a href="/categorias-editar.php?id=<?=$loja['id'] ?>">Editar</a></td>
             <td><form action= "remove-loja.php?id=<?=$loja['id'] ?>" method="POST"> 
             <!-- to passando como get e tá funcionando
         eu deveria está passando como post -->

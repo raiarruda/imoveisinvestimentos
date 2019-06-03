@@ -57,6 +57,7 @@ class Loja{
         WHERE id='{$this->id}'";
         $conexao = Conexao::pegarConexao();
         $conexao-> exec ($query);
+        var_dump($query)
     }
     
     public function carregar(){
