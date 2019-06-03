@@ -42,7 +42,7 @@
                                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                                 <li><a class="nav-link" href="#">Apartamento</a></li>
                                                 <li><a class="nav-link" href="#">Casa</a></li>
-                                                <li><a class="nav-link" href="#">Loja</a></li>
+                                                <li><a class="nav-link" href="/imoveisinvestimentos/views/lista-loja.php">Loja</a></li>
                                                 <li><a class="nav-link" href="#">Sala</a></li>
                                                 <li><a class="nav-link" href="#">Terreno</a></li>
                                             </ul>
@@ -52,7 +52,7 @@
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="nav-link" href="#">Apartamento</a></li>
                                                 <li><a class="nav-link" href="#">Casa</a></li>
-                                                <li><a class="nav-link" href="#">Loja</a></li>
+                                                <li><a class="nav-link" href="/imoveisinvestimentos/views/lista-loja.php">Loja</a></li>
                                                 <li><a class="nav-link" href="#">Sala</a></li>
                                                 <li><a class="nav-link" href="#">Terreno</a></li>
                                        
