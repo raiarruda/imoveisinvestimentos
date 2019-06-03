@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="/imoveisinvestimentos/views/assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="/imoveisinvestimentos/views/assets/css/personalizado.css" rel="stylesheet" />
     
     <!-- <link href="assets/css/site.css" rel="stylesheet" /> -->
 </head>
@@ -31,6 +32,34 @@
                                 <a class="nav-link" href="#">Histórico</a>
                             </li>
                             <!-- TODO Criar uma separação do dropdown de "venda" e "aluguel" do menu "imoveis" -->
+
+                            <li class="dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Imoveis</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                                <li class="dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Aluguel</a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <li><a class="nav-link" href="#">Apartamento</a></li>
+                                                <li><a class="nav-link" href="#">Casa</a></li>
+                                                <li><a class="nav-link" href="#">Loja</a></li>
+                                                <li><a class="nav-link" href="#">Sala</a></li>
+                                                <li><a class="nav-link" href="#">Terreno</a></li>
+                                            </ul>
+                                        </li>
+                                <li class="dropdown">
+                                    <a class=" nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Venda</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="nav-link" href="#">Apartamento</a></li>
+                                                <li><a class="nav-link" href="#">Casa</a></li>
+                                                <li><a class="nav-link" href="#">Loja</a></li>
+                                                <li><a class="nav-link" href="#">Sala</a></li>
+                                                <li><a class="nav-link" href="#">Terreno</a></li>
+                                       
+                                    </ul>
+                                  </li>
+                                </ul>
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Imóveis</a>
                             <li class="nav-item">

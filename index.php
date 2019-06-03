@@ -43,7 +43,7 @@
     <!-- Card 1 -->
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Imagem de capa do card">
+                    <img class="card-img-top" src="https://place-hold.it/300" alt="Imagem de capa do card">
                         <div class="card-body">
                             <h5 class="card-title">Título do card</h5>
                             <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
@@ -53,17 +53,18 @@
             <!-- Card 2 -->
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Imagem de capa do card">
+                    <img class="card-img-top" src="https://place-hold.it/300" alt="Imagem de capa do card">
                         <div class="card-body">
                             <h5 class="card-title">Título do card</h5>
                             <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
                         </div>
+                        
                 </div>
             </div>
             <!-- Card 3 -->
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Imagem de capa do card">
+                    <img class="card-img-top" src="https://place-hold.it/300" alt="Imagem de capa do card">
                         <div class="card-body">
                             <h5 class="card-title">Título do card</h5>
                             <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
