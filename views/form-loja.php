@@ -13,7 +13,7 @@
 
     <div class="form-group row">
         <label class="col-sm-1 col-form-label" for="area">Area:</label>
-        <div class="col-sm-11">
+        <div class="col-lg-3">
             <input  type="number" step="0.05" min="0"  class="form-control" placeholder="Exemplo: 25.6 m² " name="area">
         </div>
      </div>
@@ -24,8 +24,8 @@
         <div class="col-sm-9">
 
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="mezzanino">
-              <label class="form-check-label" for="mezzanino">
+            <input class="form-check-input" type="checkbox" id="tem_mezzanino">
+              <label class="form-check-label" for="tem_mezzanino">
                 Mezzanino
               </label>
           </div>
@@ -42,8 +42,8 @@
               </label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="frente_de_rua">
-              <label class="form-check-label" for="frente_de_rua">
+            <input class="form-check-input" type="checkbox" id="frente_rua">
+              <label class="form-check-label" for="frente_rua">
                 Frente de Rua
               </label>
           </div>
@@ -54,9 +54,9 @@
 
     <!-- Inicio da Pavimentação --> 
     <div class="form-group row">
-      <label class="col-sm-auto col-form-label" for="pavimentacao">Pavimentação:</label>
+      <label class="col-sm-auto col-form-label" for="tipo_de_rua">Pavimentação:</label>
         <div class="col-lg-2">
-          <select class="form-control" id="pavimentacao">
+          <select class="form-control" id="tipo_de_rua">
             <option>Asfalto</option>
             <option>Pedra Portuguesa </option>
             <option>Bloquete</option>
